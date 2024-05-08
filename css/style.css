@@ -92,15 +92,10 @@ nav a{
 }
 /* Products Container */
 .Products{
-    /* height: calc(100vh - 100px); */
-    /* top: 50%; */
-    /* left: 34%; */
-    /* transform: translate(1%, 15%); */
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
     width: 100%;
     padding-top: 100px;
-
 }
 
 /* .ProductsContainer{ */
@@ -118,7 +113,6 @@ nav a{
     font-weight: bold;
     color: #000;
     margin-bottom: 20px;
-    /* text-wrap: nowrap; */
 }
 .Productdisplay-right ul{
     display: block;
@@ -982,7 +976,7 @@ footer{
         margin: 0 auto;
     }
     .banner{
-        height: 188px;
+        height: 182px;
         flex-direction: column;
     }
     .left-banner{
@@ -1024,7 +1018,10 @@ footer{
     padding: 0;
 }
 
-
+.Products{
+    
+    padding-top: 35px;
+}
 
 .description p{
     width: 100%;
