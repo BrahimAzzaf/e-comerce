@@ -914,6 +914,11 @@ footer{
 
     }
 
+    .Product-small-img{
+        scroll-snap-type:mandatory;
+    }
+
+
     .Productdisplay-left{
         display: flex;
         flex-direction: column;
@@ -1021,6 +1026,10 @@ footer{
 .Products{
     
     padding-top: 35px;
+}
+
+.Product-small-img {
+    scroll-snap-type: y;
 }
 
 .description p{
