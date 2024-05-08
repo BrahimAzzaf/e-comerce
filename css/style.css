@@ -10,7 +10,6 @@ html{
     font-style: normal;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    /* height: 100vh; */
 }
 
 body{
@@ -172,7 +171,6 @@ nav a{
 
 }
 .img-container{
-    /* float: right; */
     padding:0 ;
     height: inherit;
 
@@ -544,9 +542,6 @@ nav a{
 .reviewer-rating i{
     color: #f0c417;
     width: 5px;
-    /* margin: 0 4px; */
-
-
 }
 
 
@@ -615,7 +610,6 @@ footer{
     margin: 0 auto;
     justify-content: space-between;
     gap: 20px;
-    /* max-width: 1200px; */
 }
 
 
@@ -734,7 +728,6 @@ footer{
     position:fixed;
     width: 100%;
     z-index: 999;
-    /* top: 10%; */
     bottom: 0.1%;
     transition: all 0.5s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -746,7 +739,6 @@ footer{
     display: flex;
     gap: 10px;
     font-size: 16px;
-    /* font-weight: 700; */
     padding: 10px 0;
     text-decoration: none;
     width: 50%;
@@ -758,9 +750,7 @@ footer{
 }
 
 .right-banner {
-    /* width: 96%; */
     padding: 10px 20px;
-    /* width: 700px; */
 }
 .right-banner .AddToCard-banner{
     width: 670px;
@@ -991,7 +981,7 @@ footer{
 
 
 /* media queris for responsiveness */
-/* Mobile Devices (Portrait) - Max width: 480px */
+/* Mobile Devices  - Max width: 480px */
 @media only screen and (max-width: 480px) {
     header{
         display: flex;
@@ -1005,8 +995,6 @@ footer{
         flex-direction: column;
         padding: 10px 0px;
         gap: 10px;
-        /* justify-content: space-between; */
-        /* align-items: center; */
     }
 
     
@@ -1062,32 +1050,6 @@ footer{
 }
 }
 
-/*  */
-
-/* Tablets and Smaller Desktops - Min width: 768px, Max width: 1024px */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* CSS rules for tablets and smaller desktops */
-}
-
-/* Desktops - Min width: 1025px */
-@media only screen and (min-width: 1025px) {
-    /* CSS rules for desktops */
-}
-
-/* High Resolution Devices - Min device pixel ratio: 2 */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* CSS rules for high-resolution devices like Retina displays */
-}
-
-/* Print Styles */
-@media print {
-    /* CSS rules for printing */
-}
-
-/* Custom Media Query - Example: Min width: 900px */
-@media only screen and (min-width: 900px) {
-    /* CSS rules for a custom breakpoint at 900 pixels */
-}
 
 
 
