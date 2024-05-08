@@ -1029,7 +1029,7 @@ footer{
 }
 
 .Product-small-img {
-    scroll-snap-type: y;
+    scroll-snap-type: y mandatory;
 }
 
 .description p{
