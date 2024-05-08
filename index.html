@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStore</title>
+    <!-- Css Styles  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- icons  -->
+    <script src="https://kit.fontawesome.com/1c915bbe01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img  class="logo" src="https://www.barekick.com/cdn/shop/files/Untitled_design_6_aff3fa0a-0867-433a-a03b-6128dfaa698c.png?v=1706865183&width=300" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div> -->
+        </nav>
+        <div class="nav-menu" id="navMenu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+        <div class="icons">
+
+            <a href="#" class="searchIcon">
+                <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
+                <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
+                <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a>
+            <a href="#"><svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-cart" viewBox="0 0 22 22">
+                <path d="M11 7H3.577A2 2 0 0 0 1.64 9.497l2.051 8A2 2 0 0 0 5.63 19H16.37a2 2 0 0 0 1.937-1.503l2.052-8A2 2 0 0 0 18.422 7H11Zm0 0V1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <!-- <img src="./images/Menu.svg" alt="Menu lines"> -->
+        </div>  
+    </header>
+    <!-- Products  -->
+    <div class="Products">
+    <!-- <div class="ProductsContainer"> -->
+            <div class="Productdisplay-left">
+
+                <div class="Product-small-img">
+                    <img src="https://www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680&width=10000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/explore-wide-toe.webp?v=1713365920&width=1000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/explore-lightweight.webp?v=1713365920&width=1000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/explore-non-slip.webp?v=1713365920&width=1000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/explo-log-square.webp?v=1713365920&width=10000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/explore-black-stone.webp?v=1713365920&width=10000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/explorer-black.webp?v=1713365920&width=10000" alt="" onclick="showImg(this)">
+                    <img src="https://www.barekick.com/cdn/shop/files/HappyCustomers_5ee447f3-b66a-4144-a37b-aaa357a8a0f8.png?v=1713366060&width=10000" alt="" onclick="showImg(this)">
+                    
+                </div>
+
+                    <div class="img-container">
+                        <img id="imgBox" src="https://www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680&width=1200" alt="">
+                    </div>
+
+            <!-- </div> -->
+        
+        </div>
+        <div class="Productdisplay-right">
+            <h1 class="product-name">Barekick Explorer - Healthy & non-slip barefoot shoes</h1>
+            <div class="product-prices">
+                <h3 class="product-old-price">$159.80</h3>
+                <h3 class="product-new-price">$79.90</h3>
+                <h3 class="product-save-price">Save $79.90</h3>
+            </div>
+            <ul class="product-prices-ul">
+                <li><img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/CheckCircle_5c2147d6-c133-4152-8ffa-9c7b115106bd-svg.svg?v=1705139600?v=1682332311" alt=""><span> Relieves pressure on feet and joints</span></li>
+                <li><img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/CheckCircle_5c2147d6-c133-4152-8ffa-9c7b115106bd-svg.svg?v=1705139600?v=1682332311" alt=""><span>Ideal for outdoor and everyday life</span></li>
+                <li><img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/CheckCircle_5c2147d6-c133-4152-8ffa-9c7b115106bd-svg.svg?v=1705139600?v=1682332311" alt=""><span>Developed with orthopedists</span></li>
+            </ul>
+            
+            <div class="Only-5-left">
+                <p><span class="outline"></span> Only <b>5</b> pairs left in stock</p>
+            </div> 
+        <!-- </div> -->
+            <div class="BuyNow">
+                <div class="selectorsContainer">
+                <p>color, size</p>
+                <div class="selectors">
+
+                    <select class="select">
+                        <option value="Red">Red </option>
+                        <option value="Black">Black </option>
+                        <option value="Grey">Grey </option>
+                        <option value="Turquoise">Turquoise </option></select>
+                    <select class="select">
+                        <option value="US Women 4 / US Men 4">US Women 4 / US Men 4 </option>
+                        <option value="US Women 5 / US Men 4.5">US Women 5 / US Men 4.5 </option>
+                        <option value="US Women 6 / US Men 5">US Women 6 / US Men 5 </option>
+                        <option value="US Women 7 / US Men 5.5">US Women 7 / US Men 5.5 </option>
+                        <option value="US Women 8 / US Men 6.5">US Women 8 / US Men 6.5 </option>
+                        <option value="US Women 9 / US Men 7.5">US Women 9 / US Men 7.5 </option>
+                        <option value="US Women 10 / US Men 8">US Women 10 / US Men 8 </option>
+                        <option value="US Women 10.5 / US Men 9">US Women 10.5 / US Men 9 </option>
+                        <option value="US Women 11.5 / US Men 9.5">US Women 11.5 / US Men 9.5 </option>
+                        <option value="US Women 12.5 / US Men 10.5">US Women 12.5 / US Men 10.5 </option>
+                        <option value="US Women 13 / US Men 11.5">US Women 13 / US Men 11.5 </option>
+                        <option value="US Women 13.5 / US Men 12.5">US Women 13.5 / US Men 12.5 </option></select>
+                </div>
+            </div>
+            <div class="AddToCard">
+                <button>Add to cart</button>
+            </div>
+            <div class="payment-logos">
+                <ul>
+                    <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg></li>
+                    <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" viewBox="0 0 38 24" aria-labelledby="pi-klarna"><title id="pi-klarna">Klarna</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#FFB3C7"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFB3C7"></path><path d="M34.117 13.184c-.487 0-.882.4-.882.892 0 .493.395.893.882.893.488 0 .883-.4.883-.893a.888.888 0 00-.883-.892zm-2.903-.69c0-.676-.57-1.223-1.274-1.223-.704 0-1.274.547-1.274 1.222 0 .675.57 1.223 1.274 1.223.704 0 1.274-.548 1.274-1.223zm.005-2.376h1.406v4.75h-1.406v-.303a2.446 2.446 0 01-1.394.435c-1.369 0-2.478-1.122-2.478-2.507 0-1.384 1.11-2.506 2.478-2.506.517 0 .996.16 1.394.435v-.304zm-11.253.619v-.619h-1.44v4.75h1.443v-2.217c0-.749.802-1.15 1.359-1.15h.016v-1.382c-.57 0-1.096.247-1.378.618zm-3.586 1.756c0-.675-.57-1.222-1.274-1.222-.703 0-1.274.547-1.274 1.222 0 .675.57 1.223 1.274 1.223.704 0 1.274-.548 1.274-1.223zm.005-2.375h1.406v4.75h-1.406v-.303A2.446 2.446 0 0114.99 15c-1.368 0-2.478-1.122-2.478-2.507 0-1.384 1.11-2.506 2.478-2.506.517 0 .997.16 1.394.435v-.304zm8.463-.128c-.561 0-1.093.177-1.448.663v-.535H22v4.75h1.417v-2.496c0-.722.479-1.076 1.055-1.076.618 0 .973.374.973 1.066v2.507h1.405v-3.021c0-1.106-.87-1.858-2.002-1.858zM10.465 14.87h1.472V8h-1.472v6.868zM4 14.87h1.558V8H4v6.87zM9.45 8a5.497 5.497 0 01-1.593 3.9l2.154 2.97H8.086l-2.341-3.228.604-.458A3.96 3.96 0 007.926 8H9.45z" fill="#0A0B09" fill-rule="nonzero"></path></g></svg></li>
+                    <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg></li>
+                    <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg></li>
+                    <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg></li>
+                    <li><svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z"></path><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875"></path><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858"></path><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048"></path></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z"></path><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z"></path><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z"></path></g></g></svg></li>
+                </ul>
+            </div>
+
+            <div class="shippingInfo">
+
+                <div  class="easyReturn">
+                  <img class="easyReturn-img" alt="easyReturn image"  src="https://cdn.shopify.com/s/files/1/0649/8562/8922/t/6/assets/return.png?v=1665823074">
+              
+                   <p>
+                     <b>Easy Returns</b>
+                     <br>within 30 days
+                   </p>
+                 </div>
+                
+                <div class="freePremium">
+                  <img class="freePremium-img" alt=" "  src="https://cdn.shopify.com/s/files/1/0649/8562/8922/t/6/assets/ship.png?v=1665823074">   
+                   <p>
+                     <b>Free Premium</b>
+                     <br>Shipping in the US
+                   </p>
+                 </div>
+                <div class="freePremium">
+                  <img class="freePremium-img" alt=" "  src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/15342586681683261555-128.png?v=1705054500">   
+                   <p>
+                     <b>35,000+ Satisfied</b>
+                     <br>Customers
+                   </p>
+                 </div>
+                <div class="freePremium">
+                  <img class="freePremium-img" alt=" "  src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/2840799461637732464-128.png?v=1705054673">   
+                   <p>
+                     <b>Guaranteed</b>
+                     <br>Feet Comfort
+                   </p>
+                 </div>
+            </div>
+                <div class="review">
+                    <div class="Purchaser">
+                        <img class="Purchaser-img" alt=" "  src="https://images.loox.io/uploads/2024/3/10/e4dJt9vUkG_cf_tiny.jpg">
+                        </div>
+                        <div class="description">
+                            <div class="username">
+
+                                <p>Debra S.</p>
+                                
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                            <p class="text">I really like how wide the toe box is; there's plenty of room for my toes to spread out in their natural shape. 
+                                For me, these shoes fit true to size. 
+                                I also like that these are very flat and work as a good intermediary between typical and barefoot style shoes. Overall, 
+                                I'm really liking these a few days in. Will update if anything changes.                            </p>
+                        </div>
+                </div>
+
+                <div class="imgAnimation">
+                    <img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/Explorer_Animation-ezgif.com-resize_480x480.gif?v=1706003541" alt="">
+                </div>
+                
+                <div class="put-shoes">
+                    <h1>Put an end to stiff and inflexible shoes!</h1>
+                    <p>Rigid soles and stationary footwear may induce discomfort in your nervous system, failing to align with your natural anatomy during everyday tasks.  
+                        <b>Optimal walking is achieved barefoot.</b>
+                    </p>
+                    <p>With an ultra-light and <b>pliable 4mm thin sole,</b> these shoes facilitate <b>a natural gait,</b>  fostering the inherent alignment of your feet. This effectively alleviates common discomforts in your knees, hips, back, ankles, and feet.
+                    </p>                    
+                </div>
+                
+                <div class="imgAnimation">
+                    <img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/F0C417_1.png?v=1710818816" alt="">
+                </div>
+                
+                <div class="Ddiscover-natural-movement">
+                    <h1>Discover natural freedom of movement</h1>
+                    <p>Opt for barefoot shoes to <b> embrace comfort, promote foot health,</b>and relish in a genuine walking sensation. Experience the sensation of barefoot running with these distinctive barefoot shoes, offering both protection and support</p>
+                    <p>Crafted with a special focus on allowing your feet ample space to breathe and maneuver, our <b>barefoot shoes align with nature's intentions.</b> Enhancing the strength and flexibility of your arch, they guide your body into a state of <b>natural stability.</b> </p>
+                </div>
+            </div>
+            
+            <div class="imgAnimation">
+                <img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/explorer_usa_1_480x480.jpg?v=1710076107" alt="">
+            </div>
+            
+            <div class="Optimum-for-every-situation">
+                <h1>Optimum comfort for every everyday situation</h1>
+                <p><b>✓ Breathable and flexible material:</b>Let your feet breathe and take the strain off your joints with our Explorer barefoot shoes.</p>
+                <p><b>✓ Promotes a natural gait: </b>Barefoot shoes promote a natural walking style and strengthen the muscles in your feet and legs while preventing body aches.</p>
+                <p><b>✓ Wide toe box: </b>The wide toe box combined with the flexibility of barefoot shoes allows the toes to move and spread freely, promoting foot strength and flexibility.</p>
+                <p><b>✓ Stimulate blood circulation: </b>The direct contact of the feet with the ground in barefoot shoes promotes better blood circulation in the feet and legs, which contributes to healthier blood circulation and reduces fatigue.</p>
+            </div>
+            
+            <div class="imgAnimation">
+                <img src="https://cdn.shopify.com/s/files/1/0784/0851/5868/files/Recommendedbyorthopaedists_1_480x480.jpg?v=1706162715" alt="">
+            </div>
+            
+                <div class="recommended-by-orthopedists">
+                    <h1>Recommended by <br> Orthopedists</h1>
+                    <p>Tailored for everyday use, work, and outdoor escapades, our Barekick barefoot shoes guarantee <b>unparalleled comfort and support</b>. Backed by recommendations from orthopedic and podiatry specialists due to their ergonomic design, these shoes are ideal for <b>enhancing foot health and minimizing discomfort.</b></p>
+                    <p>We offer <b> a 30-day, no questions asked guarantee</b> on all purchases. If it somehow doesn't work for you and you don't experience relief, we'll give you an immediate refund.</p>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Reviews -->
+
+        <div class="reviewsContainer">
+            <h1 class="Customers-saying">Here's What Customers Are Saying 
+                <span>
+                <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </p>
+            </span>
+        </h1>
+            
+                <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                9 Reviews 
+            </p>
+            <div class="cards">
+                <!-- 1 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/e4dJt9vUkG_mid.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">Debra S. 
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>I really like how wide the toe box is;
+                                        there's plenty of room for my toes to spread out in their natural shape. For me, these shoes fit true to size.
+                                        I also like that these are very flat and work as a good intermediary between typical and barefoot style shoes.Overall, 
+                                        I'm really liking these a few days in. Will update if anything changes.
+                                    </p>
+                                </div>
+                        </div>
+            </div>
+                <!-- 2 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/KimS5pfitQ.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">David G. 
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>I have been looking for a wide toe box shoes for a long time - due to multiple foot surgeries I was having a hard time finding a sneaker - these worked perfect - I wear an 8.5 but I ordered a 9 so if I want to wear a sock I have room - they definitely have not bothered my fit and they are wide in the toe box area - I will be ordering other colors
+                                    </p>
+                                </div>
+                        </div>
+            </div>
+                <!-- 3 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/RnHhkubfv_mid.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">Susan R.
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>These shoes are exactly what my knees and feet need now that I'm 73. My husband knows me well</p>
+                                </div>
+                        </div>
+            </div>
+                <!-- 4 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/ItEYzSudCl_mid.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">William J.
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>I I usually go for a 30 to 45 minute walk during my lunch break in our office and I'm really loving the cushion of these shoes. I can say its really better than the shoes im using before on a daily basis.                                    </p>
+                                </div>
+                        </div>
+            </div>
+                <!-- 5 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/24EEn90g1.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">Richard F. 
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>I absolutely love these shoes.
+                                    I used to run and the only shoe I would get was Nike.
+                                    I no longer run, and I noticed that when wearing my running shoes, 
+                                    just around and about, at the end of the day my feet were sore.
+                                    This year, I started going to the gym and doing some training. 
+                                    My trainer mentioned that I needed "flatter" shoes. I started looking and found these. 
+                                    I've gotta tell you - they are so comfy for me. I usually only like to wear shoes for their intended purpose. 
+                                    Example: I had shoes that were strictly for running, shoes that were strictly for everyday wear, 
+                                    shoes that were strictly for the gym. I started using these as my gym only shoes, 
+                                    but they are so comfy I wear them all the time now. I can wear these all day long with no issues. 
+                                    It really is - to me - like walking barefoot; it's the same comfort level but more protection.</p>
+
+                                </div>
+                        </div>
+            </div>
+                <!-- 6 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/KimS5pfitQ.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">Karen F. 
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>These shoes have a wide toe box that gives my toes plenty of room to spread out, which has helped to reduce the pain and inflammation in my bunions.</p>
+
+                                </div>
+                        </div>
+            </div>
+                <!-- 7 -->
+                <!-- <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/d5HEPRlwCk_mid.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">Mary H. 
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>I purchased these barefoot shoes because I've need a flat shoes for my weekly training. I was having foot pain on the typical running shoes and I really can't find something that will fit my training activities. I'm liking this Barekick brand so far                                    </p>
+
+                                </div>
+                        </div>
+            </div> -->
+                <!-- 8 -->
+                <div class="reviewCard">
+                    <img src="https://images.loox.io/uploads/2024/3/10/T8rA4v-HEO_mid.jpg" alt="">
+                    <div class="review-description">
+                            <p class="reviewer-name">Robert K. 
+                            <span class="Verified"><i class="fa-solid fa-circle-check black"></i> Verified</span></p>
+                            
+                            
+                                <ul class="reviewer-rating">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>                                    
+                                </ul>
+
+                                <div class="reviewer-text">
+                                    <p>I've worn them on a variety of surfaces: forest hiking paths, gravel lots, 8 hours walking around paved surfaces, 4hrs uninterrupted loading heavy furniture on concrete floors. I can say they're really good!</p>
+                                </div>
+                        </div>
+            </div>
+          
+            
+        </div>
+        </div>
+
+        <!-- Shipping Back and infos -->
+        <div class="shippingBack-info">
+            <div class="shippingBack-cards">
+                <!-- card 1 -->
+                <div class="shippingBack-card">
+                    <svg role="presentation" fill="none" focusable="false" stroke-width="2" width="24" height="24" class="hidden sm:block icon icon-picto-return" viewBox="0 0 24 24">
+                        <path d="M2.04 17.208a5.362 5.362 0 0 0 4.721 4.731c1.706.189 3.456.347 5.24.347 1.782 0 3.532-.158 5.238-.347a5.362 5.362 0 0 0 4.72-4.731c.18-1.697.327-3.435.327-5.208 0-1.773-.148-3.513-.326-5.208a5.362 5.362 0 0 0-4.721-4.731c-1.706-.189-3.456-.347-5.239-.347s-3.533.158-5.239.347a5.362 5.362 0 0 0-4.72 4.731c-.18 1.697-.327 3.435-.327 5.208 0 1.773.148 3.513.326 5.208Z" fill="currentColor" fill-opacity=".12" stroke="currentColor"></path>
+                        <path d="M6.857 13.977h5.907a3.429 3.429 0 0 0 3.429-3.429V7.293M10.2 10.635c-1.468 1.2-2.2 1.934-3.343 3.343C8 15.384 8.732 16.118 10.2 17.32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <h3>30 Days Money Back Guarantee</h3>
+                    <p>Not Satisfied? No Problem! Return to us within 30 days.</p>
+                    
+                </div>
+                <!-- card 2 -->
+                <div class="shippingBack-card">
+                    <svg role="presentation" fill="none" focusable="false" stroke-width="2" width="24" height="24" class="hidden sm:block icon icon-picto-lock" viewBox="0 0 24 24">
+                        <path d="M3.236 18.182a5.071 5.071 0 0 0 4.831 4.465 114.098 114.098 0 0 0 7.865-.001 5.07 5.07 0 0 0 4.831-4.464 23.03 23.03 0 0 0 .165-2.611c0-.881-.067-1.752-.165-2.61a5.07 5.07 0 0 0-4.83-4.465c-1.311-.046-2.622-.07-3.933-.069a109.9 109.9 0 0 0-3.933.069 5.07 5.07 0 0 0-4.83 4.466 23.158 23.158 0 0 0-.165 2.609c0 .883.067 1.754.164 2.61Z" fill="currentColor" fill-opacity=".12" stroke="currentColor"></path>
+                        <path d="M17 8.43V6.285A5 5 0 0 0 7 6.286V8.43" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 17.714a2.143 2.143 0 1 0 0-4.286 2.143 2.143 0 0 0 0 4.286Z" stroke="currentColor"></path>
+                      </svg>
+                    <h3>Secure payment</h3>
+                    <p>Secure payment by credit card and PayPal</p>
+                    
+                </div>
+                <!-- card 3 -->
+                <div class="shippingBack-card">
+                    <svg role="presentation" fill="none" focusable="false" stroke-width="2" width="24" height="24" class="hidden sm:block icon icon-picto-truck" viewBox="0 0 24 24">
+                        <path d="M19 17.798h1.868a1.714 1.714 0 0 0 1.715-1.715V11.25a3.274 3.274 0 0 0-3.275-3.274H14.395l-.097 7.869" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.71 18.175c1.565 0 3.094-.16 4.572-.321m-9.94-.087a1.78 1.78 0 0 1-1.576-1.56c-.189-1.594-.407-3.256-.407-4.96 0-1.705.216-3.366.405-4.96a1.783 1.783 0 0 1 1.577-1.56c1.725-.186 3.523-.409 5.37-.409s3.644.223 5.368.408a1.783 1.783 0 0 1 1.578 1.56c.066.564.136 1.135.199 1.714" stroke="currentColor"></path>
+                        <path d="M16.061 21.069a2.894 2.894 0 1 1 0-5.793 2.894 2.894 0 0 1 0 5.794v-.001ZM5.832 21.069a2.894 2.894 0 1 1 0-5.792 2.894 2.894 0 0 1 0 5.793v-.001Z" fill="currentColor" fill-opacity=".12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    <h3>Free Premium Shipping</h3>
+                    <p>Enjoy free shipping on all orders in the United States.</p>
+                    
+                </div>
+                <!-- card 4 -->
+                <div class="shippingBack-card">
+                    
+                    <svg role="presentation" fill="none" focusable="false" stroke-width="2" width="24" height="24" class="sm:hidden icon icon-picto-customer-support" viewBox="0 0 24 24">
+                        <path d="M1.714 14.143c0-3.919 2.613-4.898 3.92-4.898 2.35 0 2.938 1.96 2.938 2.938v3.92c0 2.35-1.96 2.938-2.939 2.938-1.306 0-3.919-.98-3.919-4.898ZM22.286 14.143c0-3.919-2.613-4.898-3.92-4.898-2.35 0-2.937 1.96-2.937 2.938v3.92c0 2.35 1.96 2.938 2.938 2.938 1.306 0 3.919-.98 3.919-4.898Z" fill="currentColor" fill-opacity=".12"></path>
+                        <path d="M1.714 14.143c0-3.919 2.613-4.898 3.92-4.898 2.35 0 2.938 1.96 2.938 2.938v3.92c0 2.35-1.96 2.938-2.939 2.938-1.306 0-3.919-.98-3.919-4.898ZM22.286 14.143c0-3.919-2.613-4.898-3.92-4.898-2.35 0-2.937 1.96-2.937 2.938v3.92c0 2.35 1.96 2.938 2.938 2.938 1.306 0 3.919-.98 3.919-4.898Z" stroke="currentColor"></path>
+                        <path d="M2.38 11.263C2.524 6.537 4.929 1.286 12 1.286c7.06 0 9.468 5.232 9.617 9.951m.106 5.666s.134 3.079-1.447 4.42c-1.58 1.336-5.57 1.31-5.57 1.31" stroke="currentColor" stroke-linecap="round"></path>
+                      </svg>
+                    <h3>Support is here for you</h3>
+                    <p>Any questions? Our team will be happy to help you at info@barekick.com</p>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+            <div class="logo-description">
+                <div class="footer-logo">
+                    <img  class="footer-logo" src="https://www.barekick.com/cdn/shop/files/Barekick_logotype_logotype_icon_black_and_white_copy.png?v=1704983508&width=380" alt="">
+                </div>
+                <div class="description">
+                    <p>Our goal is to revolutionise the footwear industry with our healthy barefoot shoes, which provide more well-being.</p>
+                </div>
+            </div>
+            
+            <div class="needHelp">
+                <ul>
+                    <h3 class="title">NEED HELP</h3>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="contatcUs">
+                <ul>
+                    <h3 class="title">CONTACT US</h3>
+                    <li><span>Mail:</span> info@barekick.com</li>
+                    <li><span>Phone:</span> +85270712461</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="#">
+                <svg role="presentation" focusable="false" width="27" height="27" class="icon icon-facebook" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.183 21.85v-8.868H7.2V9.526h2.983V6.982a4.17 4.17 0 0 1 4.44-4.572 22.33 22.33 0 0 1 2.667.144v3.084h-1.83a1.44 1.44 0 0 0-1.713 1.68v2.208h3.423l-.447 3.456h-2.97v8.868h-3.57Z" fill="currentColor"></path>
+                  </svg>
+            </a>
+            <a href="">
+                <svg role="presentation" focusable="false" width="27" height="27" class="icon icon-instagram" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.4c-2.607 0-2.934.011-3.958.058-1.022.046-1.72.209-2.33.446a4.705 4.705 0 0 0-1.7 1.107 4.706 4.706 0 0 0-1.108 1.7c-.237.611-.4 1.31-.446 2.331C2.41 9.066 2.4 9.392 2.4 12c0 2.607.011 2.934.058 3.958.046 1.022.209 1.72.446 2.33a4.706 4.706 0 0 0 1.107 1.7c.534.535 1.07.863 1.7 1.108.611.237 1.309.4 2.33.446 1.025.047 1.352.058 3.959.058s2.934-.011 3.958-.058c1.022-.046 1.72-.209 2.33-.446a4.706 4.706 0 0 0 1.7-1.107 4.706 4.706 0 0 0 1.108-1.7c.237-.611.4-1.31.446-2.33.047-1.025.058-1.352.058-3.959s-.011-2.934-.058-3.958c-.047-1.022-.209-1.72-.446-2.33a4.706 4.706 0 0 0-1.107-1.7 4.705 4.705 0 0 0-1.7-1.108c-.611-.237-1.31-.4-2.331-.446C14.934 2.41 14.608 2.4 12 2.4Zm0 1.73c2.563 0 2.867.01 3.88.056.935.042 1.443.199 1.782.33.448.174.768.382 1.104.718.336.336.544.656.718 1.104.131.338.287.847.33 1.783.046 1.012.056 1.316.056 3.879 0 2.563-.01 2.867-.056 3.88-.043.935-.199 1.444-.33 1.782a2.974 2.974 0 0 1-.719 1.104 2.974 2.974 0 0 1-1.103.718c-.339.131-.847.288-1.783.33-1.012.046-1.316.056-3.88.056-2.563 0-2.866-.01-3.878-.056-.936-.042-1.445-.199-1.783-.33a2.974 2.974 0 0 1-1.104-.718 2.974 2.974 0 0 1-.718-1.104c-.131-.338-.288-.847-.33-1.783-.047-1.012-.056-1.316-.056-3.879 0-2.563.01-2.867.056-3.88.042-.935.199-1.443.33-1.782.174-.448.382-.768.718-1.104a2.974 2.974 0 0 1 1.104-.718c.338-.131.847-.288 1.783-.33C9.133 4.14 9.437 4.13 12 4.13Zm0 11.07a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm0-8.13a4.93 4.93 0 1 0 0 9.86 4.93 4.93 0 0 0 0-9.86Zm6.276-.194a1.152 1.152 0 1 1-2.304 0 1.152 1.152 0 0 1 2.304 0Z" fill="currentColor"></path>
+            </svg>
+            </a>
+        </div>
+
+
+        <div class="copyright">
+            <p>© 2021 Barekick. </p>
+            
+            <div class="payment-logos">
+                <ul>
+                    <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg></li>
+                    <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" viewBox="0 0 38 24" aria-labelledby="pi-klarna"><title id="pi-klarna">Klarna</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#FFB3C7"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFB3C7"></path><path d="M34.117 13.184c-.487 0-.882.4-.882.892 0 .493.395.893.882.893.488 0 .883-.4.883-.893a.888.888 0 00-.883-.892zm-2.903-.69c0-.676-.57-1.223-1.274-1.223-.704 0-1.274.547-1.274 1.222 0 .675.57 1.223 1.274 1.223.704 0 1.274-.548 1.274-1.223zm.005-2.376h1.406v4.75h-1.406v-.303a2.446 2.446 0 01-1.394.435c-1.369 0-2.478-1.122-2.478-2.507 0-1.384 1.11-2.506 2.478-2.506.517 0 .996.16 1.394.435v-.304zm-11.253.619v-.619h-1.44v4.75h1.443v-2.217c0-.749.802-1.15 1.359-1.15h.016v-1.382c-.57 0-1.096.247-1.378.618zm-3.586 1.756c0-.675-.57-1.222-1.274-1.222-.703 0-1.274.547-1.274 1.222 0 .675.57 1.223 1.274 1.223.704 0 1.274-.548 1.274-1.223zm.005-2.375h1.406v4.75h-1.406v-.303A2.446 2.446 0 0114.99 15c-1.368 0-2.478-1.122-2.478-2.507 0-1.384 1.11-2.506 2.478-2.506.517 0 .997.16 1.394.435v-.304zm8.463-.128c-.561 0-1.093.177-1.448.663v-.535H22v4.75h1.417v-2.496c0-.722.479-1.076 1.055-1.076.618 0 .973.374.973 1.066v2.507h1.405v-3.021c0-1.106-.87-1.858-2.002-1.858zM10.465 14.87h1.472V8h-1.472v6.868zM4 14.87h1.558V8H4v6.87zM9.45 8a5.497 5.497 0 01-1.593 3.9l2.154 2.97H8.086l-2.341-3.228.604-.458A3.96 3.96 0 007.926 8H9.45z" fill="#0A0B09" fill-rule="nonzero"></path></g></svg></li>
+                    <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg></li>
+                    <li><svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg></li>
+                    <li><svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg></li>
+                    <li><svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z"></path><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875"></path><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858"></path><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048"></path></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z"></path><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z"></path><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z"></path></g></g></svg></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+        <div class="banner">
+            <div class="left-banner">
+                <img id="37798608404764" draggable="false" class="gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 featured-image-only gp-cursor-pointer !gp-rounded-none gp-w-full gp-transition-opacity  gp_lazyloaded" data-src="//www.barekick.com/cdn/shop/files/explorer-bundle_768x768.webp?v=1713360680 768w,//www.barekick.com/cdn/shop/files/explorer-bundle_1024x1024.webp?v=1713360680 1024w,//www.barekick.com/cdn/shop/files/explorer-bundle_1440x1440.webp?v=1713360680 1440w" data-srcset="//www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680 767w, //www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680 1023w, //www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680 1440w" src="//www.barekick.com/cdn/shop/files/explorer-bundle_768x768.webp?v=1713360680 768w,//www.barekick.com/cdn/shop/files/explorer-bundle_1024x1024.webp?v=1713360680 1024w,//www.barekick.com/cdn/shop/files/explorer-bundle_1440x1440.webp?v=1713360680 1440w" width="2000" height="2000" alt="Barekick Explorer - Healthy &amp; non-slip barefoot shoes (1+1 FREE)" base-src="//www.barekick.com/cdn/shop/files/explorer-bundle_small.webp?v=1713360680" sizes="100vw" style="--aspect:2000/2000;--aspect-tablet:2000/2000;--aspect-mobile:2000/2000;--objf:fill" srcset="//www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680 767w, //www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680 1023w, //www.barekick.com/cdn/shop/files/explorer-bundle.webp?v=1713360680 1440w">
+                <div>
+                <p class="text">Barekick Explorer - Healthy & non-slip barefoot shoes... </p>
+                <ul class="reviewer-rating">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>                                    
+                </ul>
+                <p>(99)</p>
+            </div>
+            </div>
+            <div class="right-banner">
+                
+            <div class="AddToCard-banner">
+                <button>
+                    <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" data-id="508817591475831144">
+                    <path fill="currentColor" strokelinecap="round" strokelinejoin="round" d="M233.21,56.31A12,12,0,0,0,224,52H66L60.53,21.85A12,12,0,0,0,48.73,12H24a12,12,0,0,0,0,24H38.71L63.62,173a28,28,0,0,0,4.07,10.21A32,32,0,1,0,123,196h34a32,32,0,1,0,31-24H91.17a4,4,0,0,1-3.93-3.28L84.92,156H196.1a28,28,0,0,0,27.55-23l12.16-66.86A12,12,0,0,0,233.21,56.31ZM100,204a8,8,0,1,1-8-8A8,8,0,0,1,100,204Zm88,8a8,8,0,1,1,8-8A8,8,0,0,1,188,212Zm12-83.28A4,4,0,0,1,196.1,132H80.56L70.38,76H209.62Z"></path></svg>
+                     Get Yours Now</button>
+            </div>
+            </div>
+        </div>
+
+
+
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
