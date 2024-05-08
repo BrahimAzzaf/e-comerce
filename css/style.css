@@ -1029,7 +1029,10 @@ footer{
 }
 
 .Product-small-img {
-    scroll-snap-type: y mandatory;
+    overscroll-behavior-x:contain;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type: x mandatory;
 }
 
 .description p{
